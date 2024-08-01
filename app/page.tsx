@@ -1,5 +1,6 @@
 import React from 'react'
 import { MainLayout } from './layout/MainLayout'
+import Link from 'next/link'
 
 const Home: React.FC = () => {
   const events = [
@@ -54,9 +55,12 @@ const Home: React.FC = () => {
           ))}
         </div>
         {/* boton para ver mas */}
-        <a className="block mt-8 bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 rounded-full text-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-colors duration-200 text-center cursor-pointer">
+        <Link
+          href="/concerts"
+          className="block mt-8 bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 rounded-full text-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-colors duration-200 text-center cursor-pointer"
+        >
           View More Events
-        </a>
+        </Link>
       </section>
       <section
         id="contact"
@@ -73,9 +77,6 @@ const Home: React.FC = () => {
           </a>
         </p>
       </section>
-      <footer className="py-6 text-center bg-black bg-opacity-90 backdrop-blur-sm shadow-lg">
-        <p>&copy; 2024 NFT Ticket Store. All rights reserved.</p>
-      </footer>
     </MainLayout>
   )
 }
