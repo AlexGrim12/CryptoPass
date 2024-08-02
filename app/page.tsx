@@ -1,6 +1,8 @@
 import React from 'react'
 import { MainLayout } from './layout/MainLayout'
 import Link from 'next/link'
+import Image from 'next/image'
+import Background from './assets/bg.jpg'
 
 const Home: React.FC = () => {
   const events = [
@@ -15,7 +17,7 @@ const Home: React.FC = () => {
   return (
     <MainLayout>
       <main className="flex flex-col items-center justify-center text-center py-20">
-        <h2 className="text-5xl font-bold mb-6">
+        {/* <h2 className="text-5xl font-bold mb-6">
           Buy and Sell Tickets as NFTs
         </h2>
         <p className="text-xl mb-12 max-w-xl mx-auto">
@@ -26,7 +28,13 @@ const Home: React.FC = () => {
           className="bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 rounded-full text-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-colors duration-200"
         >
           Browse Events
-        </a>
+        </a> */}
+        <Image
+          src={Background}
+          alt="Background"
+          layout="1080x720"
+          objectFit="cover"
+        />
       </main>
       <section
         id="about"
