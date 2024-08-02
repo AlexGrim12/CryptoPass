@@ -34,6 +34,8 @@ const Home: React.FC = () => {
           alt="Background"
           layout="1080x720"
           objectFit="cover"
+          quality={100}
+          className="rounded-lg backdrop-blur-sm shadow-lg"
         />
       </main>
       <section
