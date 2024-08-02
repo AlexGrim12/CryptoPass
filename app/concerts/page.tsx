@@ -77,33 +77,34 @@ const Events: React.FC = () => {
         <h3 className="text-3xl font-bold mb-4 text-center">Events</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {events.map((event) => (
-            <div
-              key={event.name}
-              className="bg-zinc-700 bg-opacity-40 backdrop-blur-sm shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-200"
+            <Link
+              className=""
+              href={{
+                pathname: '/checkout',
+                query: {
+                  name: event.name,
+                  date: event.date,
+                  location: event.location,
+                  image: event.image,
+                },
+              }}
             >
-              <img
-                src={event.image}
-                alt={event.name}
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <h4 className="text-2xl font-bold mb-2">{event.name}</h4>
-              <p className="mb-1">Date: {event.date}</p>
-              <p className="mb-4 text-sm">Location: {event.location}</p>
-              <Link
-                className="text-blue-400 hover:underline"
-                href={{
-                  pathname: '/checkout',
-                  query: {
-                    name: event.name,
-                    date: event.date,
-                    location: event.location,
-                    image: event.image,
-                  },
-                }}
+              <div
+                key={event.name}
+                className="bg-zinc-700 bg-opacity-40 backdrop-blur-sm shadow-lg p-6 rounded-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-200"
               >
-                Buy Tickets
-              </Link>
-            </div>
+                <img
+                  src={event.image}
+                  alt={event.name}
+                  className="w-full h-48 object-cover rounded-lg mb-4"
+                />
+                <h4 className="text-2xl font-bold mb-2">{event.name}</h4>
+                <p className="mb-1">Date: {event.date}</p>
+                <p className="mb-4 text-sm">Location: {event.location}</p>
+
+                <a className="text-blue-400 hover:underline">Buy Tickets</a>
+              </div>
+            </Link>
           ))}
         </div>
       </section>

@@ -48,9 +48,9 @@ const Home: React.FC = () => {
             >
               <h4 className="text-2xl font-bold mb-2">{event.name}</h4>
               <p className="mb-4">Date: {event.date}</p>
-              <a href="#" className="text-blue-400 hover:underline">
+              {/* <a href="#" className="text-blue-400 hover:underline">
                 Buy Tickets
-              </a>
+              </a> */}
             </div>
           ))}
         </div>
