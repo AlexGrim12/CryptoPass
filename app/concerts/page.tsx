@@ -78,6 +78,7 @@ const Events: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {events.map((event) => (
             <Link
+              key={event.name}
               className=""
               href={{
                 pathname: '/checkout',
