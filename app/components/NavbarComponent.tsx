@@ -10,7 +10,7 @@ export default function Navbar() {
       <Link href="/" className="text-2xl font-bold">
         <Image src={Logo} alt="Logo" width={40} height={40} />
         <p className="text-sm font-bold text-white cursor-pointer">
-          NFT Ticket Store
+          CryptoPass
         </p>
       </Link>
       <nav>
