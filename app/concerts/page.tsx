@@ -67,6 +67,27 @@ const Events: React.FC = () => {
       image:
         'https://www.billboard.com/wp-content/uploads/media/Kanye-West-Pablo-Tour-2016-billboard-1548.jpg',
     },
+    {
+      name: 'Ariana Grande Concert',
+      date: 'May 5, 2025',
+      location: 'Los Angeles, CA',
+      image:
+        'https://assets.teenvogue.com/photos/592d9ba130adb34b07d487ed/16:9/w_2560%2Cc_limit/GettyImages-451357572.jpg',
+    },
+    {
+      name: 'Justin Bieber Concert',
+      date: 'June 1, 2025',
+      location: 'Toronto, ON',
+      image:
+        'https://i.iheart.com/v3/re/new_assets/626d6086059c2246007b881d?ops=contain(1480,0)',
+    },
+    {
+      name: 'Lagos Concert',
+      date: 'July 10, 2025',
+      location: 'Mexico City, MX',
+      image:
+        'https://cdn.prod.website-files.com/6358a9adf1579c410820b4b7/642f745b171648c3d1e5de37_LAGOS%20%3A%3A%20Fame%20Magazine.jpeg',
+    },
 
     // Agrega más eventos si es necesario
   ]
